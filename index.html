@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 3</title>
+    <link rel="icon" href="IMAGES/CALCULATOR.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            Hernan Arturo Morelli Caceres |              
+        </div>
+        <div id="frase">Ingeniero en Sistemas & Diseñador</div>
+    </header>
+    <form name="calculadora">
+        <div id="contenedorFondo">
+                <div id="contenedor">
+                    <div id="teclasPanel">
+                        <input id="displayNumeros" type="textfield" name="ans" value="" autocomplete="off" readonly>
+                    </div>
+                            <div id="teclas">
+                                <button class="teclasSignosSuperiores" type="reset" value="C">C</button>
+                                <button class="teclasSignosSuperiores" type="button" value="±" onclick="llenarValores('±')">±</button>
+                                <button class="teclasSignosSuperiores" type="button" value="%" onclick="llenarValores('%')">%</button>
+                                <button class="teclasSignos" type="button" value="/" onclick="llenarValores('/')">/</button>
+                                <br>
+                                <button class="teclasNumeros" type="button" value="9" onclick="llenarValores('9')">9</button>
+                                <button class="teclasNumeros" type="button" value="8" onclick="llenarValores('8')">8</button>
+                                <button class="teclasNumeros" type="button" value="7" onclick="llenarValores('7')">9</button>
+                                <button class="teclasSignos" type="button" value="*" onclick="llenarValores('*')">*</button>
+                                <br>
+                                <button class="teclasNumeros" type="button" value="4" onclick="llenarValores('4')">4</button>
+                                <button class="teclasNumeros" type="button" value="5" onclick="llenarValores('5')">5</button>
+                                <button class="teclasNumeros" type="button" value="6" onclick="llenarValores('6')">6</button>
+                                <button class="teclasSignos" type="button" value="-" onclick="llenarValores('-')">-</button>
+                                <br>
+                                <button class="teclasNumeros" type="button" value="3" onclick="llenarValores('3')">3</button>
+                                <button class="teclasNumeros" type="button" value="2" onclick="llenarValores('2')">2</button>
+                                <button class="teclasNumeros" type="button" value="1" onclick="llenarValores('1')">1</button>
+                                <button class="teclasSignos" type="button" value="+" onclick="llenarValores('+')">+</button>
+                                <br>
+                                <button class="teclasNumeros0" type="button" value="0" onclick="llenarValores('0')">   0   </button>
+                                <button class="teclasNumeros" type="button" value="+" onclick="llenarValores('+')">+</button>
+                                <button class="teclasSignos" type="button" value="=" onclick="resolver()">=</button>
+                            </div>
+                        </div>
+                </div>
+    </form>
+</body>
+</html>
